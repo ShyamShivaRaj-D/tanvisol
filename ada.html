@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Active Directory Adoption</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/media/TANVI-SOL-LOGO-NEW.jpg">
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+
+
+
+    <!-- Navbar Started -->
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="#"><img src="media/TANVI-SOL-LOGO-NEW.jpg" alt="" width="160px"
+                    height="70px"></a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="media/TANVI-SOL-LOGO-NEW.jpg" alt=""
+                            width="100px" height="40px"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="blog.html">Blog</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" data-bs-auto-close="outside" href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                
+                                <li class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                        href="#">Consulting</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="vs.html">Vulnerability Assessment</a></li>
+                                        <li><a class="dropdown-item" href="cpt.html">Cloud Penetration Testing</a></li>
+                                        <li><a class="dropdown-item" href="iso.html">ISO 27001 Consulting</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Managed
+                                        Security</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="siem.html">SIEM Implementation</a></li>
+                                        <li><a class="dropdown-item" href="esiem.html">Elastic SIEM Consulting</a></li>
+                                        <li><a class="dropdown-item" href="soc.html">SoC as a Service</a></li>
+                                        <li><a class="dropdown-item" href="socea.html">SOC Effectiveness Audit</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Cloud
+                                        Services</a>
+                                    <ul class="dropdown-menu m-1">
+                                        <li><a class="dropdown-item" href="cm.html">Cloud Migration</a></li>
+                                        <li><a class="dropdown-item" href="dds.html">DevOps & DevSecOps</a></li>
+                                        <li><a class="dropdown-item" href="ada.html">Active Directory Adoption</a></li>
+                                        <li><a class="dropdown-item" href="cs24.html">24x7 Cloud Services</a></li>
+                                        <li><a class="dropdown-item" href="cmg.html">Cloud Management</a></li>
+                                        <li><a class="dropdown-item" href="csl.html">Security Implementation</a></li>
+                                        <li><a class="dropdown-item" href="csa.html">Security Assessment</a></li>
+                                        <li><a class="dropdown-item" href="csm.html">Cloud Security Monitoring</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Training</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="devops.html">DevOps</a></li>
+                                        <li><a class="dropdown-item" href="aws.html">AWS</a></li>
+                                        <li><a class="dropdown-item" href="microsoft.html">Microsoft Azure</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <a href="login.html" class="login-button">Login</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Navbar Ended -->
+
+
+
+    <!-- Section One Started -->
+
+    <div class="card text-bg-dark sec-one">
+        <img src="media/black-background.jpg" class="card-img" alt="...">
+        <div class="card-img-overlay">
+            <h5 class="card-title">Azure Active Directory Adoption</h5>
+        </div>
+    </div>
+
+    <!-- Section One Ended -->
+
+    <!-- Section two Started -->
+
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="sec-two">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="services1.html">Services</a></li>
+            <li class="breadcrumb-item"><a href="clser.html">Cloud Services</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Azure Active Directory Adoption</li>
+        </ol>
+    </nav>
+
+    <!-- Section two Ended -->
+
+
+    <!-- Section Three Started -->
+
+    <section class="sec-three">
+        <div class="container">
+            <div class="row">
+                <div class="col- col-lg-12 col-md-12 col-sm-12">
+                    <h1>Azure Active Directory Adoption</h1>
+
+                    <p class="text">Azure Active Directory provides administrators with the ability to manage end-user
+                        identities and access privileges. The
+                        service gives the freedom to choose which information will stay in the cloud, who can manage or
+                        use the information,
+                        which services or applications can access the information, and which end users can have access.
+                        Azure Active Directory
+                        offers a universal identity platform that provides your people, partners, and customers a single
+                        identity to access the
+                        applications they want and collaborate from any platform and device.</p>
+
+                    <p class="text">Azure Active Directory incorporates identity management capabilities which include
+                        multi-factor authentication, device
+                        registration, password management, auditing, security monitoring and alerting. Azure Active
+                        Directory adoption helps
+                        businesses streamline processing, and improve productivity and security, while single sign-on
+                        gives employees and
+                        business partners access to thousands of cloud applications. Azure Active Directory adoption
+                        will empower employees by
+                        providing access to the business world’s leading cloud applications and services – on the device
+                        they choose from
+                        wherever, whenever they need.</p>
+
+                    <h4>Feature:</h4>
+
+                    <p class="text">Azure Active Directory (AD) is a cloud-based directory and identity management
+                        service provided by Microsoft. The
+                        following are some of the key features of Azure AD that support its adoption:</p>
+
+                    <ul>
+                        <li class="text">
+                            <b>Single Sign-On (SSO)</b><br>
+                            Azure Active Directory (AD) provides SSO for thousands of cloud applications, including
+                            Office 365, Salesforce, Dropbox,
+                            and more.
+                        </li>
+                        <li class="text">
+                            <b>Multi-Factor Authentication (MFA)</b><br>
+                            Azure AD supports MFA for added security, ensuring that users have to provide multiple forms
+                            of verification before
+                            accessing sensitive information.
+                        </li>
+                        <li class="text">
+                            <b>Identity Management</b><br>
+                            Azure AD provides identity management for on-premises and cloud-based applications, making
+                            it easier for organizations
+                            to manage and secure their user identities.
+                        </li>
+                        <li class="text">
+                            <b>User Provisioning And Deprovisioning</b><br>
+                            Azure AD allows administrators to manage user accounts and permissions from a centralized
+                            location, reducing the time
+                            and effort required to manage user accounts. Enables businesses to watch application usage,
+                            and enhance security,
+                            protecting from advanced threats.
+                        </li>
+                        <li class="text">
+                            <b>Group Policy Support</b><br>
+                            Azure AD supports Group Policy, making it possible to manage and enforce security and access
+                            policies across multiple
+                            devices and platforms.
+                        </li>
+
+                        <li class="text">
+                            <b>Application Proxy</b><br>
+                            Azure AD Application Proxy allows organizations to securely publish on-premises web
+                            applications to external users.
+                        </li>
+
+                        <li class="text">
+                            <b>Access Reviews</b><br>
+                            Azure AD provides access reviews, allowing administrators to regularly assess the access
+                            permissions of users and make
+                            changes as needed.
+                        </li>
+
+                        <li class="text">
+                            <b>Compliance</b><br>
+                            Azure AD supports various compliance standards, making it a secure and compliant solution
+                            for organizations.
+                        </li>
+
+                    </ul>
+
+                    <h4>What You Get?</h4>
+
+                    <ul>
+
+                        <li class="text">
+                            <b>Centralized Identity Management</b><br>
+                            Azure AD allows organizations to centralize their identity and access management processes,
+                            reducing the complexity and
+                            costs associated with managing multiple identity solutions.
+                        </li>
+
+                        <li class="text">
+                            <b>Improved Security</b><br>
+                            Azure AD integrates with other security solutions such as Microsoft Defender for Identity
+                            and Microsoft Cloud App
+                            Security to provide a comprehensive security solution for organizations. Creates improved
+                            application security, with
+                            full internal control.
+                        </li>
+
+                        <li class="text">
+                            <b>Scalability and Reliability</b><br>
+                            Azure AD is a cloud-based solution, which provides organizations with the scalability and
+                            reliability they need to
+                            support their growing identity management requirements.
+                        </li>
+
+                        <li class="text">
+                            <b>Access Management</b><br>
+                            Azure AD provides organizations with the ability to manage access to resources and
+                            applications based on roles and
+                            permissions, reducing the risk of unauthorized access.
+                        </li>
+
+                        <li class="text">
+                            <b>Integration with Other Microsoft Services</b><br>
+                            Azure AD integrates seamlessly with other Microsoft services such as Office 365, Dynamics
+                            365, and Power Platform,
+                            providing organizations with a unified identity solution for all their Microsoft services.
+                            Azure Active Directory works
+                            with multiple platforms and devices, to assist productivity and real-time communication.
+                        </li>
+
+                        <li class="text">
+                            <b>Faster processing</b><br>
+                            n Makes it easier and quicker to onboard new employees, terminate access for leavers, and
+                            implement access to new cloud
+                            services, so users are up and running more quickly.
+                        </li>
+
+                    </ul>
+
+
+                    <p class="text">In conclusion, Azure AD provides organizations with a comprehensive and secure
+                        solution for identity and access
+                        management, reducing the risk of security breaches and improving the user experience.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Three Ended -->
+
+
+
+    <!-- Section Five Started -->
+
+    <div class="container sec-five">
+        <div class="apply_box">
+            <h1>
+                Schedule A Call:
+            </h1>
+            <form action="call.jsp" id="emailForm" onsubmit="emailSend(); reset(); return false;" method="post">
+                <div class="form_container">
+                    <div class="form_control">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="Enter First Name" required>
+                    </div>
+                    <div class="form_control">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Enter Last Name" required>
+                    </div>
+                    <div class="form_control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="jhon@gmail.com"required>
+                    </div>
+                    <div class="form_control">
+                        <label for="number">Mobile Number</label>
+                        <input type="text" id="number" name="number" placeholder="0000000000" required>
+                    </div>
+                    <div class="textarea_control">
+                        <label for="address">Address</label>
+                        <textarea name="address" id="address" cols="50" rows="4" placeholder="Enter Address" required></textarea>
+                    </div>
+                </div>
+                <div class="button_container">
+                    <button type="submit" value="save" class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Section Five Ended -->
+
+
+    <!-- Footer Started -->
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <img src="media/TANVI-SOL-LOGO-NEW.jpg" alt="">
+                        <p>The only way to do great work is <br>to love what you do</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h2>Services</h2>
+                        <ul>
+
+                            <li><a href="consulting.html">Consulting</a></li>
+                            <li><a href="mansec.html">Managed Security</a></li>
+                            <li><a href="clser.html">Cloud Services</a></li>
+                            <li><a href="train.html">Training</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h2>Links</h2>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aws.html">AWS</a></li>
+                            <li><a href="devops.html">Devops</a></li>
+                            <li><a href="microsoft.html">Azure Microsoft</a></li>
+                            <li><a href="blog.html">blog</a></li>
+                            <li><a href="contact.html">contact</a></li>
+                            <li><a href="services1.html">Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h2>Follow Us On</h2>
+                        <p class="socials">
+                            <a href="https://www.facebook.com/profile.php?id=61554719614400" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.youtube.com/@Tanvisol" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/tanv_isol?igshid=YzVkODRmOTdmMw==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <p>
+                        <p><strong>Contact Us : </strong><a href="">info@tanvisol.com</a></p>
+                        <p>Copyrights 2014 @Tanvisol</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Footer Ended -->
+
+
+
+    <!-- Whats app icon started -->
+
+    <section class="whatsapp">
+        <div class="fixed-icon">
+            <a href="https://wa.me/8886886842"><i class="fa-brands fa-square-whatsapp "></i></a>
+        </div>
+    </section>
+
+    <!-- Whats app icon started -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

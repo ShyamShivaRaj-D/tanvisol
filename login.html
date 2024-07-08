@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Set the body height to the full viewport height */
+            background-color: rgba(3, 155, 8,0.1);
+        }
+        .form-container {
+            width: 350px;
+            height: 370px;
+            background-color: #f0f8ff;
+            box-shadow:  #98b9d6 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding: 20px 30px;
+        }
+
+        .title {
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 10px 0 30px 0;
+            font-size: 35px;
+            font-weight: 700;
+            color: #039b08;
+
+        }
+
+        .form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            margin-bottom: 15px;
+        }
+
+        .input {
+            border-radius: 20px;
+            border: none;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            outline: 0 !important;
+            box-sizing: border-box;
+            padding: 12px 15px;
+        }
+
+        .page-link {
+            text-decoration: none;
+            margin: 0;
+            text-align: end;
+            color: #747474;
+            text-decoration-color: #747474;
+        }
+
+        .page-link-label {
+            cursor: pointer;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            color: cornflowerblue;
+        }
+
+        .page-link-label:hover {
+            color: teal;
+        }
+
+        .form-btn {
+            padding: 10px 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border-radius: 20px;
+            border: 0 !important;
+            outline: 0 !important;
+            background: teal;
+            color: white;
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            font-size: 17px;
+        }
+
+        .form-btn:active {
+            box-shadow: none;
+        }
+
+        .sign-up-label {
+            margin: 0;
+            font-size: 12px;
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .sign-up-link {
+            margin-left: 1px;
+            font-size: 12px;
+            text-decoration: underline;
+            text-decoration-color: teal;
+            color: cornflowerblue;
+            cursor: pointer;
+            font-weight: 800;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .sign-up-link:hover{
+            color: teal;
+        }
+        input::placeholder{
+            font-size: 15px;
+            font-weight: 600;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <p style="color: red; font-weight: bold;">Page Under Working</p>
+        <p class="title">Welcome back</p>
+        <form class="form">
+            <input type="email" class="input" placeholder="Email" name="email" readonly>
+            <input type="password" class="input" placeholder="Password" name="password" readonly>
+            <p class="page-link">
+                <span class="page-link-label">Forgot Password?</span>
+            </p>
+            <button class="form-btn">Log in</button>
+        </form>
+        <p class="sign-up-label">
+            Don't have an account?<a href="register.html"><span class="sign-up-link">Sign up</span></a>
+        </p>
+        
+    </div>
+</body>
+</html>

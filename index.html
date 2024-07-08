@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Tanvisol</title>
+    <link rel="icon" type="image/x-icon" href="/media/TANVI-SOL-LOGO-NEW.jpg">
+</head>
+
+<body>
+
+    <!-- Navbar Started -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="#"><img src="media/TANVI-SOL-LOGO-NEW.jpg" alt="" width="160px"
+                    height="70px"></a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="media/TANVI-SOL-LOGO-NEW.jpg" alt=""
+                            width="100px" height="40px"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Blog</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" data-bs-auto-close="outside" href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                
+                                <!-- <li class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                        href="#">Consulting</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="vs.html">Vulnerability Assessment</a></li>
+                                        <li><a class="dropdown-item" href="cpt.html">Cloud Penetration Testing</a></li>
+                                        <li><a class="dropdown-item" href="iso.html">ISO 27001 Consulting</a></li>
+                                    </ul>
+                                </li> -->
+
+                                <!-- <li class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Managed
+                                        Security</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="siem.html">SIEM Implementation</a></li>
+                                        <li><a class="dropdown-item" href="esiem.html">Elastic SIEM Consulting</a></li>
+                                        <li><a class="dropdown-item" href="soc.html">SoC as a Service</a></li>
+                                        <li><a class="dropdown-item" href="socea.html">SOC Effectiveness Audit</a></li>
+                                    </ul>
+                                </li> -->
+
+                                <li class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Cloud
+                                        Services</a>
+                                    <ul class="dropdown-menu m-1">
+                                        <li><a class="dropdown-item" href="cm.html">Cloud Migration</a></li>
+                                        <li><a class="dropdown-item" href="dds.html">DevOps & DevSecOps</a></li>
+                                        <!-- <li><a class="dropdown-item" href="ada.html">Active Directory Adoption</a></li> -->
+                                        <li><a class="dropdown-item" href="cs24.html">24x7 Cloud Services</a></li>
+                                        <li><a class="dropdown-item" href="cmg.html">Cloud Management</a></li>
+                                        <li><a class="dropdown-item" href="csl.html">Security Implementation</a></li>
+                                        <li><a class="dropdown-item" href="csa.html">Security Assessment</a></li>
+                                        <!-- <li><a class="dropdown-item" href="csm.html">Cloud Security Monitoring</a></li> -->
+                                    </ul>
+                                </li>
+
+                                <li class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Training</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="devops.html">DevOps</a></li>
+                                        <li><a class="dropdown-item" href="aws.html">AWS</a></li>
+                                        <li><a class="dropdown-item" href="microsoft.html">Microsoft Azure</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <a href="login.html" class="login-button">Login</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- NavBar Ended -->
+
+
+    <!-- Section One Started -->
+
+    <section class="one">
+        <div class="container">
+            <div class="row">
+                <div class="col- col-sm-12 col-md-12 col-lg-12">
+                    <div class="card text-bg-dark">
+                        <img src="media/Model-2-copy.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <p class="card-text">Live as if you were to die tomorrow.<br>
+                                Learn as if you were to live forever</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section One Ended-->
+
+
+    <!-- Section Two Started -->
+
+    <section class="two">
+        <div class="container">
+            <div class="col- col-sm-12 col-md-12 col-lg-12">
+                <a href="register.html" class="register-button">Register For Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Two Ended-->
+
+    <!-- Services -->
+    
+    <section class="section-service bg-color">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-5 col-md-8 m-auto">
+                    <div class="sub-heading text-center">
+                        <span>SERVICES</span>
+                        <h5>We Are Offering All Kinds of IT Solutions Services</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-3">
+                <!--<div class="col-lg-4 col-md-6">
+                        <div class="service-box s1">
+                            <div class="service-content">
+                                <a href="vs.html">Vulnerability Assessment</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-box s2">
+                            <div class="service-content">
+                                <a href="cpt.html">Cloud Penetration Testing</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-box s3">
+                            <div class="service-content">
+                                <a href="iso.html">ISO 27001 Consulting</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-box s4">
+                            <div class="service-content">
+                                <a href="siem.html">SIEM Implementation</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-box s5">
+                            <div class="service-content">
+                                <a href="esiem.html" >Elastic Siem Consulting</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-box s6">
+                            <div class="service-content">
+                                <a href="soc.html">SoC as a Service</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-box s7">
+                            <div class="service-content">
+                                <a href="socea.html">SOC Effectiveness Audit</a>
+                            </div>
+                        </div>
+                    </div> -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box s1">
+                        <div class="service-content">
+                            <a href="cm.html">Cloud Migration</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box s2">
+                        <div class="service-content">
+                            <a href="dds.html">DevOps & DevSecOps</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-4 col-md-6">
+                        <div class="service-box s10">
+                            <div class="service-content">
+                                <a href="ada.html">Active Directory Adoption</a>
+                            </div>
+                        </div>
+                    </div> -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box s3">
+                        <div class="service-content">
+                            <a href="cs24.html">24x7 Cloud Services</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box s4">
+                        <div class="service-content">
+                            <a href="cmg.html">Cloud Management</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box s5">
+                        <div class="service-content">
+                            <a href="csl.html">Security Implementation</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box s6">
+                        <div class="service-content">
+                            <a href="csa.html">Security Assessment</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-4 col-md-6">
+                        <div class="service-box s7">
+                            <div class="service-content">
+                                <a href="csm.html">Cloud Security Monitoring</a>
+                            </div>
+                        </div>
+                    </div> -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Ended -->
+
+    <!-- Quote -->
+    
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
+                        <div class="blockquote-custom-icon bg-info shadow-sm"><i class="fa fa-quote-left text-white"></i>
+                        </div>
+                        <p class="mb-0 mt-2 font-italic">"Choosing wisely is not just a decision; it's a journey toward
+                            fulfillment and authenticity."</p>
+                    </blockquote>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Quote -->
+
+    <!-- cources started -->
+
+    <div class="container h-100">
+        <div class="row align-middle">
+            <div class="col-md-6 col-lg-4 column">
+                <div class="card gr-1">
+                    <div class="txt">
+                        <h1>DevOps Certification <br> Training</h1>
+                        <p>weekend / Weekday Live Classes</p>
+                    </div>
+                    <a href="devops.html">more</a>
+                    <div class="ico-card">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 column">
+                <div class="card gr-2">
+                    <div class="txt">
+                        <h1>AWS Architect Certification <br> Training</h1>
+                        <p>weekend / Weekday Live Classes</p>
+                    </div>
+                    <a href="aws.html">more</a>
+                    <div class="ico-card">
+                        <i class="fa-brands fa-aws"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 column">
+                <div class="card gr-3">
+                    <div class="txt">
+                        <h1>Microsoft Azure Certificate <br> Training</h1>
+                        <p>weekend / Weekday Live Classes</p>
+                    </div>
+                    <a href="microsoft.html">more</a>
+                    <div class="ico-card">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <!-- cources ended -->
+
+    
+    <!--About Started-->
+    <section class="dark aboutus">
+        <div class="container py-4">
+            <h1 class="h1 text-center" id="pageHeaderTitle">About Us</h1>
+    
+            <article class="postcard dark blue">
+                <a class="postcard__img_link" href="#">
+                    <img class="postcard__img" src="media/contactus.jpg" alt="Image Title" />
+                </a>
+                <div class="postcard__text">
+                    <h1 class="postcard__title blue"><a href="#">About Tanvisol</a></h1>
+                    <div class="postcard__subtitle small">
+                        <time>
+                            <i class="fas fa-calendar-alt mr-2"></i> Started at 2014
+                        </time>
+                    </div>
+                    <div class="postcard__bar"></div>
+                    <div class="postcard__preview-txt">
+                        Welcome to Tanvisol, a leading provider of comprehensive IT solutions and professional training in
+                        cutting-edge
+                        technologies such as DevOps, AWS, and Azure.With a history of excellence since 2014, Tanvisol has
+                        been a trailblazer in shaping the landscape of
+                        IT solutions and training programs.Join us at Tanvisol, where innovation, service excellence, and
+                        training converge to elevate your IT experience and
+                        skills for a dynamic and evolving technological era.
+                    </div>
+                    <ul class="postcard__tagbox">
+                        <li class="tag__item play blue">
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!--About Ended-->
+
+    <!-- Footer Started -->
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+    
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <img src="media/TANVI-SOL-LOGO-NEW.jpg" alt="">
+                        <p>The only way to do great work is <br>to love what you do</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h2>Services</h2>
+                        <ul>
+    
+                            <!-- <li><a href="consulting.html">Consulting</a></li>
+                            <li><a href="mansec.html">Managed Security</a></li> -->
+                            <li><a href="clser.html">Cloud Services</a></li>
+                            <li><a href="train.html">Training</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+    
+    
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h2>Links</h2>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aws.html">AWS</a></li>
+                            <li><a href="devops.html">Devops</a></li>
+                            <li><a href="microsoft.html">Azure Microsoft</a></li>
+                            <li><a href="blog.html">blog</a></li>
+                            <li><a href="contact.html">contact</a></li>
+                            <li><a href="services1.html">Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h2>Follow Us On</h2>
+                        <p class="socials">
+                            <a href="https://www.facebook.com/profile.php?id=61554719614400" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.youtube.com/@Tanvisol" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/tanv_isol?igshid=YzVkODRmOTdmMw==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <p>
+                        <p><strong>Contact Us : </strong><a href="">info@tanvisol.com</a></p>
+                        <p>Copyrights 2014 @Tanvisol</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fotter ended -->
+
+
+
+    <!-- Whatsapp Started-->
+
+    <section class="whatsapp">
+        <div class="fixed-icon">
+            <a href="https://wa.me/8886886842"><i class="fa-brands fa-square-whatsapp "></i></a>
+        </div>
+    </section>
+
+    <!-- Whatsapp Ended -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoC as a Service</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/media/TANVI-SOL-LOGO-NEW.jpg">
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <style>
+        .sec-three .img-fluid {
+            padding: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <!-- Navbar Started -->
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="#"><img src="media/TANVI-SOL-LOGO-NEW.jpg" alt=""
+                    width="160px" height="70px"></a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="media/TANVI-SOL-LOGO-NEW.jpg" alt=""
+                            width="100px" height="40px"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="blog.html">Blog</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" data-bs-auto-close="outside" href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                
+                                <li class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                        href="#">Consulting</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="vs.html">Vulnerability Assessment</a></li>
+                                        <li><a class="dropdown-item" href="cpt.html">Cloud Penetration Testing</a></li>
+                                        <li><a class="dropdown-item" href="iso.html">ISO 27001 Consulting</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Managed
+                                        Security</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="siem.html">SIEM Implementation</a></li>
+                                        <li><a class="dropdown-item" href="esiem.html">Elastic SIEM Consulting</a></li>
+                                        <li><a class="dropdown-item" href="soc.html">SoC as a Service</a></li>
+                                        <li><a class="dropdown-item" href="socea.html">SOC Effectiveness Audit</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Cloud
+                                        Services</a>
+                                    <ul class="dropdown-menu m-1">
+                                        <li><a class="dropdown-item" href="cm.html">Cloud Migration</a></li>
+                                        <li><a class="dropdown-item" href="dds.html">DevOps & DevSecOps</a></li>
+                                        <li><a class="dropdown-item" href="ada.html">Active Directory Adoption</a></li>
+                                        <li><a class="dropdown-item" href="cs24.html">24x7 Cloud Services</a></li>
+                                        <li><a class="dropdown-item" href="cmg.html">Cloud Management</a></li>
+                                        <li><a class="dropdown-item" href="csl.html">Security Implementation</a></li>
+                                        <li><a class="dropdown-item" href="csa.html">Security Assessment</a></li>
+                                        <li><a class="dropdown-item" href="csm.html">Cloud Security Monitoring</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Training</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="devops.html">DevOps</a></li>
+                                        <li><a class="dropdown-item" href="aws.html">AWS</a></li>
+                                        <li><a class="dropdown-item" href="microsoft.html">Microsoft Azure</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <a href="login.html" class="login-button">Login</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Navbar Ended -->
+
+
+
+    <!-- Section One Started -->
+
+    <div class="card text-bg-dark sec-one">
+        <img src="media/black-background.jpg" class="card-img" alt="...">
+        <div class="card-img-overlay">
+            <h5 class="card-title">SoC as a Service</h5>
+        </div>
+    </div>
+
+    <!-- Section One Ended -->
+
+    <!-- Section two Started -->
+
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="sec-two">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="services1.html">Services</a></li>
+            <li class="breadcrumb-item"><a href="mansec.html">Managed Security</a></li>
+            <li class="breadcrumb-item active" aria-current="page">SoC as a Service</li>
+        </ol>
+    </nav>
+
+    <!-- Section two Ended -->
+
+
+    <!-- Section Three Started -->
+
+    <section class="sec-three">
+        <div class="container">
+            <div class="row">
+                <div class="col- col-lg-12 col-md-12 col-sm-12">
+                    <h1>SoC as a Service</h1>
+
+                    <p class="text">Tanvisol's 24/7 Monitored Service gives you a straightforward way to manage the
+                        risks to your critical assets. Our SOC
+                        team is equipped to identify threats and potential security exploits using leading technologies
+                        like multi-vector event
+                        correlation techniques, asset modelling, user profiling, and threat intelligence.</p>
+
+                    <img src="media/SOC-DIAGRAM1.png" class="img-fluid" alt="...">
+
+
+                    <br><br>
+                    <h4>Feature:</h4>
+                    <hr>
+
+                    <p class="text">Monitor, detect and investigate threats with speed and accuracy — all at scale.</p>
+
+                    <ul>
+                        <li class="text">
+                            <b>An OPen and Extensible Data Platform</b>
+                            Large volumes of data per day from sources, possibly structured or unstructured, must be
+                            ingested and monitored to
+                            ensure complete security visibility.
+                        </li>
+                        <li class="text">
+                            <b>Risk-Based Alerting</b><br>
+                            Risk-based alerting (RBA) provides teams with a unique opportunity to pivot resources from
+                            traditionally reactive
+                            functions to proactive functions in the SOC. As alert fidelity and true positive rates
+                            increase, analysts’ resources can
+                            be shifted to higher impact tasks like threat hunting or adversary simulation, empowering
+                            the SOC to build up the skill
+                            sets of their analysts and prepare them for any threats they might encounter making them
+                            better equipped to provide
+                            relevant threat notification to customers.
+                        </li>
+                        <li class="text">
+                            <b>Advanced Threat Detection</b><br>
+                            Tanvisol SOC operates as far more than simply a managed logging service. Built around
+                            advanced Threat Intelligence
+                            integrated with industry-leading technology, it is designed to deliver a highly relevant and
+                            efficient security
+                            monitoring service.
+                        </li>
+                        <li class="text">
+                            <b>Embedded Threat Intelligence</b><br>
+                            Prioritize alerts and accelerate investigations with built-in threat intelligence. SOC and
+                            threat intelligence is the
+                            ultimate combination against cyber threat detection and response. Integrating cyber
+                            intelligence within a SOC allows
+                            analysts to enable robust security measures and adopt an efficient and streamlined workflow.
+                        </li>
+
+                        <li class="text">
+                            <b>Rapid Response Security Content</b><br>
+                            Stay on top of new and emerging threats by receiving automatic security content updates from
+                            the Tanvisol Threat Research
+                            Team.
+                        </li>
+
+                        <li class="text">
+                            <b>Flexible Deployment Options</b><br>
+                            Tanvisol helps tailor service-offerings to customer needs with flexible, deployment options,
+                            across cloud and on premises
+                            infrastructure. It saves time and reduces overheads through centralized monitoring and alarm
+                            investigation across
+                            federated customer deployments.
+                        </li>
+
+                        <li class="text">
+                            <b>Machine Learning</b><br>
+                            The same data sources as SIEM can be used by ML to identify security threats with high
+                            reliability, while also cutting
+                            down on the amount of detection time needed in the SOC. The entire process can be
+                            streamlined by implementing machine
+                            learning, with algorithms identifying critical events, reduce noise from the volumes of data
+                            and automatically
+                            triggering alerts.
+                        </li>
+
+                        <li class="text">
+                            <b>SOAR</b><br>
+                            We assist organisations in capturing, aggregating, and validating a wider range of
+                            intelligence across their networks,
+                            endpoints, and cloud environments. We also assist them in better understanding the
+                            advantages of SOAR by working closely
+                            with clients to fully understand their security needs. We accomplish this by producing
+                            useful results that improve
+                            threat detection and response abilities.
+                        </li>
+
+                        <li class="text">
+                            <b>Threat Hunting</b><br>
+                            Several overlapping strategies are needed for effective cybersecurity. Your threat detection
+                            tools' discoveries of
+                            incidents require your attention. Additionally, proactive searching for threats that hide in
+                            the shadows is necessary.
+                            You can lessen your risk from hidden enemies by giving your SOC threat hunting capabilities.
+                        </li>
+
+                        <li class="text">
+                            <b>Incident Responce</b><br>
+                            Identification, documentation, analysis, and management of security threats, risks, and
+                            incidents in real- is all part
+                            of security operations and incident management. Delivering a thorough and comprehensive
+                            picture of all security issues
+                            and policy violations (such as unauthoredz access to data) within a specific IT
+                            infrastructure is the goal.
+                        </li>
+
+                        <li class="text">
+                            <b>Threat Automation</b><br>
+                            SOC automation shortens the time between threat detection and remedy. By automating your
+                            security operations, you can
+                            enhance human abilities and knowledge to identify threats and take swift action, which will
+                            result in significant gains
+                            for your team.
+                        </li>
+
+                        <li class="text">
+                            <b>Broad visibility</b><br>
+                            Collects data from wide variant of log sources such as On-Premises, Cloud, Perimeter
+                            Devices, Applications etc.
+                            Peregrine comes with an EDR engine which can protect the servers from behaviour monitoring
+                            perspective too.
+                        </li>
+
+                        <li class="text">
+                            <b>Advanced Threat</b><br>
+                            Peregrine can look for advanced threats that are employed by hackers today. In combination
+                            of log monitoring, EDR,
+                            Machine Learning and Threat Hunting, the Peregrine team covers a large variety of advanced
+                            Threats prevalent today.
+                        </li>
+
+                        <li class="text">
+                            <b>Detailed investigations</b><br>
+                            We investigate suspicious events in detail, reducing false positives and continuously
+                            learning about your environment.
+                        </li>
+
+                        <li class="text">
+                            <b>Log Retention and Search</b><br>
+                            The platform has ability to store vast number of logs as per internal or regulatory
+                            compliance requirement of an
+                            organization.
+                        </li>
+
+                        <li class="text">
+                            <b>Incident Responce Assistance</b><br>
+                            Every minute counts in Incident Response. We assist clients to quickly detect and enable
+                            them to respond quickly to
+                            prevent the spread of threats.
+                        </li>
+
+                        <li class="text">
+                            <b>Root Cause Analysis</b><br>
+                            Deep analysis and investigation into the root cause of incidents to ensure designing
+                            customized rules and workflows that
+                            improve detection capabilities.
+                        </li>
+
+                        <li class="text">
+                            <b>Regular Engagement</b><br>
+                            Regular reviews with customers to review overall security posture and identify improvements
+                            that can bring further value
+                            from engagement.
+                        </li>
+
+                    </ul>
+
+
+                    <br><br>
+                    <h4>What You Get?</h4>
+                    <hr>
+
+                    <ul>
+
+                        <li class="text">
+                            <b>Security Monitoring</b><br>
+                            Our SOC teams ensure prompt detection of security incidents by continuously monitoring
+                            activity across an organization's
+                            networks, endpoints, servers, and databases.
+                        </li>
+
+                        <li class="text">
+                            <b>Threat Hunting</b><br>
+                            Tanvisol provides a holistic platform that supports a hypothesis-driven threat hunting
+                            process and a big data
+                            analytics-based search and visualization solution.
+                        </li>
+
+                        <li class="text">
+                            <b>Cloud Security</b><br>
+                            While technology like firewalls or intrusion prevention systems (IPS) may stop simple
+                            attacks, human analysis is needed
+                            to deal with major incidents at the source. By ensuring up-to-date threat intelligence and
+                            integrating it across
+                            enterprise systems for more efficient risk and compliance management, our SOC teams can help
+                            enhance an organization's
+                            overall cloud security posture.
+                        </li>
+
+                        <li class="text">
+                            <b>Threat Detection</b><br>
+                            Utilize threat intelligence, machine learning, and advanced security analytics to defend
+                            against threats. These tools
+                            will target detection, deliver high-fidelity alerts, and reduce critical care times while
+                            increasing true positive
+                            rates.
+                        </li>
+
+                        <li class="text">
+                            <b>Continuous Monitoring</b><br>
+                            Integrate information from across your attack surface to close gaps, equip staff, and lower
+                            risk. Throughout your
+                            on-premises and cloud-based infrastructure, all with continuous monitoring.
+                        </li>
+
+                        <li class="text">
+                            <b>investigation & Response</b><br>
+                            By combining various data, reveal attacks as they progress. Access crucial context easily.
+                            Utilize case management and
+                            strong automations to respond quickly.
+                        </li>
+
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Three Ended -->
+
+
+
+
+    <!-- Section Four Started -->
+
+    <div class="accordion sec-four" id="accordionFlushExample">
+        <p>FAQ's for SoC as a Service</p>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    What is a SOC vs NOC?
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    A NOC's job is to make sure that an organization's IT infrastructure is running well, while a SOC's
+                    job is to identify
+                    and defend against cybersecurity threats. An organization's IT infrastructure needs to be supported
+                    by both a NOC and a
+                    SOC in order to be efficient and secure.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    What is the benefits for SOC as a service?
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    SOC-as-a-Service offers several advantages, such as: quicker detection and correction: Providers of
+                    SOC-as-a-Service
+                    decrease the load on internal security teams. They keep an eye on security around-the-clock and
+                    employ automation and
+                    data science to deliver high-confidence alerts faster.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    What is SOC SLA?
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    SLA stands for the standard of service that you anticipate from a vendor. SLA refers to how quickly
+                    you can anticipate
+                    getting a security threat alert from your provider when it comes to managed SOC services.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    What is the difference between Siem and SOC?
+                </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    Security Incident Event Management, or SIEM, is a system that gathers and evaluates aggregated log
+                    data, making it
+                    distinct from SOC. The Security Operations Center, or SOC, is made up of personnel, procedures, and
+                    equipment intended
+                    to handle security incidents discovered through SIEM log analysis.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    What is the difference between MDR and SOC?
+                </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    A SOC is necessary for an entire MDR solution. The SOC is a specialised security team that
+                    continuously analyses data to
+                    search for, identify, and confirm these dangers. The SOC monitors and evaluates these threats and
+                    exposures.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                    What is SOC framework?
+                </button>
+            </h2>
+            <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    The overarching architecture that specifies the parts offering SOC functionality and how they
+                    interact is known as a SOC
+                    framework. In other words, a monitoring system that tracks and logs security events should serve as
+                    the foundation of a
+                    SOC framework.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                    What is a SIEM tool?
+                </button>
+            </h2>
+            <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    A thorough awareness of an organization's information security can be obtained through the use of
+                    the tools and services
+                    that make up Security Information and Event Management (SIEM). SIEM technology offer real-time
+                    system visibility across
+                    an organization's information security platforms. management of event logs that incorporates
+                    information from several
+                    sources.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                    What is the role of SoC engineer?
+                </button>
+            </h2>
+            <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    The SOC Engineer uses technical skills in several security technologies to analyse security threats
+                    from various
+                    security platforms and technologies. is in responsible of handling the initial triage of client
+                    issues. The basic MSS
+                    and support-based client configuration issues and alerts should be located and fixed.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                    What's the difference between SOC 1 and SOC 2?
+                </button>
+            </h2>
+            <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    While a SOC 2 report focuses on a service organization's controls that are important to its
+                    operations and compliance, a
+                    SOC 1 report is made to address internal controls over financial reporting. One or both may be
+                    appropriate for your
+                    company.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Section Four Ended -->
+
+
+
+    <!-- Section Five Started -->
+
+    <div class="container sec-five">
+        <div class="apply_box">
+            <h1>
+                Schedule A Call:
+            </h1>
+            <form action="call.jsp" id="emailForm" onsubmit="emailSend(); reset(); return false;" method="post">
+                <div class="form_container">
+                    <div class="form_control">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="first_name" placeholder="Enter First Name" required>
+                    </div>
+                    <div class="form_control">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="last_name" placeholder="Enter Last Name" required>
+                    </div>
+                    <div class="form_control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="jhon@gmail.com" required>
+                    </div>
+                    <div class="form_control">
+                        <label for="number">Mobile Number</label>
+                        <input type="number" id="number" name="number" placeholder="0000000000" required>
+                    </div>
+                    <div class="textarea_control">
+                        <label for="address">Address</label>
+                        <textarea name="address" id="address" cols="50" rows="4" placeholder="Enter Address" required></textarea>
+                    </div>
+                </div>
+                <div class="button_container">
+                    <button type="submit" value="save" class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Section Five Ended -->
+
+
+    <!-- Footer Started -->
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <img src="media/TANVI-SOL-LOGO-NEW.jpg" alt="">
+                        <p>The only way to do great work is <br>to love what you do</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h2>Services</h2>
+                        <ul>
+
+                            <li><a href="consulting.html">Consulting</a></li>
+                            <li><a href="mansec.html">Managed Security</a></li>
+                            <li><a href="clser.html">Cloud Services</a></li>
+                            <li><a href="train.html">Training</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h2>Links</h2>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aws.html">AWS</a></li>
+                            <li><a href="devops.html">Devops</a></li>
+                            <li><a href="microsoft.html">Azure Microsoft</a></li>
+                            <li><a href="blog.html">blog</a></li>
+                            <li><a href="contact.html">contact</a></li>
+                            <li><a href="services1.html">Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h2>Follow Us On</h2>
+                        <p class="socials">
+                            <a href="https://www.facebook.com/profile.php?id=61554719614400" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="http://www.youtube.com/@Tanvisol" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/tanv_isol?igshid=YzVkODRmOTdmMw==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <p>
+                        <p><strong>Contact Us : </strong><a href="">info@tanvisol.com</a></p>
+                        <p>Copyrights 2014 @Tanvisol</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer Ended -->
+
+
+
+    <!-- Whats app icon started -->
+
+    <section class="whatsapp">
+        <div class="fixed-icon">
+            <a href="https://wa.me/7993854483"><i class="fa-brands fa-square-whatsapp "></i></a>
+        </div>
+    </section>
+
+    <!-- Whats app icon started -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
